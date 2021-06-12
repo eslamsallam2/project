@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+    <title>contat </title>
+    <meta charset="utf-8">
+    <link type="text/css" href="form.css" rel="stylesheet">
+    <link rel="icon" href="imags/logo.png">
+    </head>
+    <style>
+         body{margin: 0px 40px 0px 40px;
+ background-color: rgb(240, 161, 44);
+display: block;    }
+div.gallery {
+  border: 1px solid #ccc;
+  width: 200px;
+}
+.eslam{background-color: lightgoldenrodyellow;
+overflow: hidden;}
+input{margin: 10px; 
+padding: 10px;
+}
+input[type=password],input[type=tel],input[type=email],input[type=text]
+{
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+fieldset { width: 100%; border: 1px solid black; border-radius: 10px;
+background-image: url(imgform.jpeg);
+float: left;
+}
+label {
+    padding: 15px 15px 12px 0;
+  display: inline-block;
+color:cornsilk;
+  font-weight: bold;
+font-size: 20px;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+color: white;  padding: 15px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+  float: left;
+  font-size: 20px;
+}
+.container {
+  border-radius: 5px;
+  background-image:url(cont.png);
+  background-size: 100%;
+  overflow: hidden;
+  padding: 20px;
+  background-size: cover;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer{padding: 100px;
+background-image: url(ask.png);
+background-repeat: no-repeat;
+overflow: hidden;
+background-color: white;
+}
+img{float: right;
+margin: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+}
+select{width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+    </style>
+    <body>
+        <div class="eslam">
+   
+       <div>
+        <h1 style="text-align: center; color:  rgb(240, 161, 44); font-family:cursive;">Log in to contact with us And get our secvices</h1>
+        <div class="container">
+        <form name="form"  onsubmit="return(validation())" action="index.html" >
+            <div class="row">
+                <div class="col-25">
+            <label for="name"> First Name :</label>
+            </div>
+        <input name="name" type="text" placeholder="Enter your Username" id="user" class="control" >
+        <span id="userr"></span>
+        </div>
+        <div class="row">
+            <div class="col-25">
+        <label for="sname"> Last Name :</label>
+        </div>
+            <input name="name" type="text" placeholder="last name" id="lastuser" class="control" ><span id="lastuserr"></span>
+            </div>
+            <div class="row">
+                <div class="col-25">
+        <label for="passward"> Your Password : </label>
+        </div>
+        <input name="password" type="password" placeholder="Enter your Password" id="pass" class="control" ><span id="passs"></span>
+        </div>
+        <div class="row">
+            <div class="col-25">
+        <label for="passward"> Confirm your Password :  </label>
+        </div>
+        <input name="password" type="password" placeholder="confirm your Password" id="conpass" class="control" ><span id="conpasss"></span><br>
+        </div>
+        <div class="row">
+            <div class="col-25">
+        <label for="phone">Your Email :</label>
+        </div>
+        <input name="email" type="email" placeholder="Enter your Email" id="email" class="control"><br><span id="emaill"></span>
+        </div>
+        <div class="row">
+            <div class="col-25">
+        <label  for="gender"> Phone :</label> 
+        </div>
+        <input name="phone" type="tel" placeholder="Enter your Phone Number" id="mobile" class="control" ><br><span id="mobill"></span>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="address"> Your Address :</label>
+            </div>
+<input type="text" placeholder="Enter your Address" id="address" class="control"><br><span id="addresss"></span>   
+</div>            
+         <div class="row">
+            <div class="col-25">
+                <label for="gender"> Choose your Gender : </label>
+            </div>
+            <select name="gender" value="gender">
+                <option> Male</option>
+                <option > Female</option>
+            </select>
+            </div><br>
+        <div class="row">
+        <input name="btn" type="submit" value="Sign up" class="control" id="submit"><br>
+        </div>
+        </form>
+        </div>
+    </div> 
+    <script type="text/javascript" src="form.js"></script>
+     <div class="footer"></div>
+    </div>
+    </body>
+
+
+</HTML>
